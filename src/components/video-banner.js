@@ -132,7 +132,7 @@ class VideoBanner extends Component {
         
 
           <div className="video-banner__logo">
-              <img src={Logo} alt="Core Realty"/>
+              <img src={Logo} alt="Associated Concepts"/>
             </div>
 
 

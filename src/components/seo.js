@@ -41,7 +41,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: 'Core Realty',
+          content: 'Associated Concepts',
         },
         {
           property: `og:description`,
@@ -68,7 +68,7 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          content: "Core Realty",
+          content: "Associated Concepts",
           name: "application-name",
         },
       ].concat(meta)}

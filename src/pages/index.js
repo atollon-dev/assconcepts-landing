@@ -5,7 +5,7 @@ import VideoBanner from '../components/video-banner'
 
 const IndexPage = () => (
   <>
-    <SEO title="Core Realty - Real Estate" />
+    <SEO title="Associated Concepts - Real Estate" />
     <VideoBanner />
   </>
 )

@@ -1,0 +1,113 @@
+::-moz-selection {
+  /* Code for Firefox */
+  // color: $color--red;
+  // background: $color--navy;
+}
+
+::selection {
+  color: $color--grey;
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
+  min-height: 100vh;
+  font-weight:300;
+  font-family: $font--primary;
+
+  &.menu-open {
+    overflow: hidden;
+    &:after {
+      transform:translateX(-240px);
+    }
+  }
+
+  #___gatsby {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+main {
+  // padding-top: 79px;
+  min-height: calc(100vh - 200px);
+  transition: transform 0.3s;
+  width: 100%;
+  will-change: transform;
+  overflow: hidden;
+
+  @include breakpoint(medium) {
+    // padding-top: 130px;
+    min-height: 100vh;
+  }
+}
+
+h1,
+h2 {
+  font-family: $font--secondary;
+  color: $color--white;
+  word-spacing: 3px;
+  letter-spacing: 0.15px;
+  font-weight: 700;
+  
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font--secondary;
+  color: $color--white;
+  letter-spacing: 0.15px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 33px;
+  line-height: 38px;
+  @include breakpoint(medium) {
+    font-size:43px;
+    line-height:50px;
+  }
+}
+
+h3 {
+  letter-spacing: 0.3px;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+input, label {
+  font-weight: 700;
+}
+
+p,
+ul,
+li,
+ol,
+div,
+table {
+  font-family: $font--primary;
+  color: #636363;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  line-height: 20px;
+  margin-bottom: 80px;
+}
+a {
+  font-family: $font--primary;
+  color: $color--white;
+  text-decoration: none;
+}
+
+.error-404 {
+  text-align: center;
+  padding: 100px 0;
+}
+

@@ -1,0 +1,23 @@
+.submit {
+  color: $color--grey;
+  border: none;
+  outline: none;
+  font-family: $font--primary;
+  font-weight: 700;
+  //text-transform: uppercase;
+  @include breakpoint (small) {
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+  }
+  @include breakpoint (medium) {
+    width: 170px;
+    height: 60px;
+    font-size: 36px;
+  }
+  @include breakpoint (large) {
+    width: 200px;
+    height: 80px;
+    font-size: 40px;
+  }
+}

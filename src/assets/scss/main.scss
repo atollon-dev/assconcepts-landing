@@ -1,0 +1,22 @@
+$color--grey: #000000;
+$color--white: #636363;
+$color--black: #000000;
+
+$font--primary: 'Suisse', sans-serif;
+$font--secondary: 'Suisse', sans-serif;
+
+$smaller-width: 1020px;
+$content-width: 1280px;
+$full-width: 1480px;
+
+@import 'global/mixins';
+@import 'global/normalize';
+@import 'global/typography';
+@import 'global/base';
+@import 'global/buttons';
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/video-banner';
+
+

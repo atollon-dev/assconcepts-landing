@@ -1,0 +1,138 @@
+.header {
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  transition: ease 0.5s;
+  background: $color--black;
+  @include breakpoint (small) {
+    top: 0;
+  }
+  &--scrolled {
+    top: -40px;
+  }
+  &--hidden {
+    top: -500px;
+  }
+  &__inner {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 25px 20px;
+    align-items: center;
+    @include breakpoint (small) {
+    }
+    @include breakpoint (large) {
+    }
+
+    a {
+      .logo {
+        font-family: $font--secondary;
+        color: $color--white;
+        margin: 0;
+      }
+    } 
+  }
+  ul {
+    list-style: none;
+    display: none;
+    @include breakpoint (smedium) {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      margin-top: unset;
+      width: 100%;
+      margin: 0;
+      max-width: 550px;
+      justify-content: space-between;
+    }
+    @include breakpoint (large) {
+      width: 50%;
+      right: 20px;
+      max-width: 600px;
+    }
+    li {
+      text-align: right;
+      margin: 0;
+      a {
+        color: $color--white;
+        font-weight: 700;
+        font-size: 16.2px;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+        @include hoverline ($color--white, 2px);
+      }
+    }
+  }
+  .hamburger {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 30px;
+    padding: 0;
+    @include breakpoint (smedium) {
+      display: none;
+    }
+    @mixin line {
+      display: inline-block;
+      vertical-align: middle;
+      width: 18px;
+      height: 2px;
+      top: -1px;
+      background: white;
+      border-radius: 0;
+      transition: 0.2s;
+    }
+    .lines {
+      //create middle line
+      @include line;
+      position: relative;
+      &::before,
+      &::after {
+        @include line;
+        background: white;
+        position: absolute;
+        content: "";
+        transform-origin: 35px/14 center;
+        left: 0;
+        z-index: 30;
+      }
+      &::before {
+        top: 0px;
+        background: $color--white;
+        height: 2px;
+        z-index: 30;
+      }
+      &::after {
+        top: 5px;
+        background:$color--white;
+        height: 2px;
+        z-index: 30;
+      }
+    }
+    &.active {
+      .lines {
+        background: transparent;
+        border:0;
+        &:before, &:after{
+          // transform-origin: 50% 50%;
+          top:0px;
+          width: 22px;
+          position: absolute;
+          z-index: 30;
+        }
+        
+        &:before{
+          transform: rotate(45deg);
+        }
+        &:after{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+
+}

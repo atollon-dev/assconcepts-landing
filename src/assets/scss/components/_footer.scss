@@ -1,0 +1,68 @@
+.footer {
+  background: $color--black;
+  &__inner {
+    color: $color--white;
+    max-width: $content-width;
+    width: 100%;
+    margin: 0 auto;
+    padding: 55px 20px 60px;
+    @include breakpoint (smedium) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include breakpoint (large) {
+      padding: 55px 20px 60px;
+    }
+  }
+  .logo {
+    margin-bottom: 0;
+    width: 130px;
+    height: auto;
+    margin-bottom: 40px;
+    color: $color--white;
+    @include breakpoint (smedium) {
+      margin-bottom: 0;
+      width: unset;
+    }
+  }
+  a {
+    font-family: $font--primary;
+    font-size: 17.19px;
+    color: $color--white;
+  }
+  p {
+    font-family: $font--primary;
+    font-weight: 500;
+    font-size: 13px;
+    color: $color--white;
+    max-width: 400px;
+    margin-bottom: 40px;
+    @include breakpoint (smedium) {
+      margin-bottom: 0;
+      margin: 0 20px;
+    }
+  }
+  ul {
+    margin-left: 0;
+    list-style: none;
+    margin-bottom: 40px;
+    @include breakpoint (smedium) {
+      padding: 0;
+      margin-bottom: 0;
+      width: 100%;
+      max-width: 300px;
+    }
+    @include breakpoint (large) {
+      max-width: 510px;
+    }
+    li {
+      // font-family: Helvetica;
+      font-size: 13px;
+      color: #FFFFFF;
+      letter-spacing: 0.14px;
+      line-height: 22px;
+      margin-bottom: 0;
+    }
+  }
+}

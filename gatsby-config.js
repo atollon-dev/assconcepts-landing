@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Core Realty - Real Estate`,
+    title: `Associated Concepts`,
     description: '',
     author: ``,
   },

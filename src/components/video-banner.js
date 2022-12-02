@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Video from '../assets/images/CORE_REALTY_LANDINGPAGE.mp4'
+import Video from '../assets/images/video-banner.mp4'
 import Logo from '../assets/images/logo.png'
 import Instagram from '../assets/images/insta.svg'
 import PDF from '../assets/images/Core-Privacy-Policy.pdf'
@@ -139,9 +139,7 @@ class VideoBanner extends Component {
 
           <div className="video-banner__bottom">
             <div className='video-banner__buttons'>
-              <a className='btn' href ="https://www.realestate.com.au/agency/core-realty-melbourne-TXZYKJ"target="_blank">View Listings</a>
               <button className='btn' onClick={() => this._toggleForm()}>Contact</button>
-              <a className='btn' href={PDF} target="_blank">Privacy Policy</a>
             </div>
                       </div>
         </div>

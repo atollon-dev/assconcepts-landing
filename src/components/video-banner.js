@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import Video from '../assets/images/video-banner.mp4'
 import Logo from '../assets/images/logo.png'
 import Instagram from '../assets/images/insta.svg'
-import PDF from '../assets/images/Core-Privacy-Policy.pdf'
 
 import Link from '../utils/link'
 

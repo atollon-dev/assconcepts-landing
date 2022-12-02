@@ -250,8 +250,8 @@
       }
       button {
         color: #ffffff;
-        background: #561d1e;
-        border: 1px solid #561d1e;
+        background: #000000;
+        border: 1px solid #000000;
         cursor: pointer;
         padding: 10px;
         box-shadow: none;
@@ -263,9 +263,9 @@
         box-shadow: none;
         transition: all ease 0.3s;
         &:hover {
-          border: 1px solid #561d1e;
+          border: 1px solid #000000;
           background: transparent;
-          color: #561d1e;
+          color: #000000;
         }
         &:focus {
           outline: 0;

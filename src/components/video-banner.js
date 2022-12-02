@@ -127,7 +127,7 @@ class VideoBanner extends Component {
           <video src={Video} autoPlay muted playsInline loop />
 
           <div className='video-banner__text'>
-            <p>New Website Coming Soon</p>
+            <p>We are working on something exciting</p>
       
           </div>
         
